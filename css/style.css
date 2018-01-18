@@ -1,0 +1,56 @@
+body {
+    width: 90%;
+    margin: 0 auto;
+    align-content: center;
+}
+
+#container_12{
+    overflow: auto;
+}
+#nav, {
+    font-size: 200%;
+    margin: auto;
+    align-content: center;
+}
+
+.article {
+    width: 31.3%;
+    float: right;
+    margin: 1%;
+    overflow: auto;
+}
+
+li {
+    padding: 0.5em;
+}
+
+li.nav {
+    font-size: 200%;
+    display: inline;
+    padding: 0.5em;
+}
+
+#nav, #footer {
+    background-color: aliceblue;
+    padding: 0.5em;
+}
+
+.article {
+    height: 5em;
+    margin-bottom: 1em;
+    background-color: antiquewhite
+}
+
+p {
+    text-align: center;
+}
+
+#feature{
+    color: chocolate;
+    font-size: 200%;
+    height: 5em;
+    background-image: url(https://www.rmiguides.com/_includes/_images/cultural-landscape/23_Geology_Mt._Rainier_RMI.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}   
