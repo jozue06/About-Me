@@ -14,3 +14,47 @@ p {
 }
 .center-this {
     text-align: center;}
+
+.nav {
+    display: inline;
+}
+
+
+.blurb {
+    background-color: rgb(7, 143, 233);
+    float: center center;
+    margin: auto;
+    text-align: center;
+    max-width: 1000px;  
+    padding: 150px;
+    font-size: 100px;
+    border: 20px solid rgba(0,0,0,5);
+
+}           
+
+.wrapper .photographer {    
+    border: 10px solid rgba(0,0,0,5);
+    width:98.6%;
+}
+.photographer img {
+    overflow: hidden;
+    /*float: center;*/
+    display: block;
+    margin: auto;
+    position: fixed center;
+    width: 50%;
+}
+/*.wrapper . { 
+    max-width: 1000px;
+    padding: 20px;
+    font-size: 100px;
+    border: 20px solid rgba(0,0,0,5);
+    font-size: 100px;
+    border: 20px solid rgba(0,0,0,5);
+}*/
+
+.pictures img{
+    margin: auto;
+    text-align: center;
+    width: 100%;      
+}
