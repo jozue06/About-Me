@@ -1,56 +1,43 @@
-body {
-    width: 90%;
-    margin: 0 auto;
-    align-content: center;
-}
-
-#container_12{
-    overflow: auto;
-}
-#nav, {
-    font-size: 200%;
-    margin: auto;
-    align-content: center;
-}
-
-.article {
-    width: 31.3%;
-    float: right;
-    margin: 1%;
-    overflow: auto;
-}
-
-li {
-    padding: 0.5em;
-}
-
-li.nav {
-    font-size: 200%;
+.nav {
     display: inline;
-    padding: 0.5em;
 }
 
-#nav, #footer {
-    background-color: aliceblue;
-    padding: 0.5em;
-}
 
-.article {
-    height: 5em;
-    margin-bottom: 1em;
-    background-color: antiquewhite
-}
-
-p {
+.blurb {
+    background-color: rgb(7, 143, 233);
+    float: center center;
+    margin: auto;
     text-align: center;
-}
+    max-width: 1000px;  
+    padding: 150px;
+    font-size: 100px;
+    border: 20px solid rgba(0,0,0,5);
 
-#feature{
-    color: chocolate;
-    font-size: 200%;
-    height: 5em;
-    background-image: url(https://www.rmiguides.com/_includes/_images/cultural-landscape/23_Geology_Mt._Rainier_RMI.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-}   
+}           
+
+.wrapper .photographer {    
+    border: 10px solid rgba(0,0,0,5);
+    width:98.6%;
+}
+.photographer img {
+   overflow: hidden;
+    /*float: center;*/
+    display: block;
+    margin: auto;
+    position: fixed center;
+    width: 50%;
+}
+/*.wrapper . { 
+    max-width: 1000px;
+    padding: 20px;
+    font-size: 100px;
+    border: 20px solid rgba(0,0,0,5);
+    font-size: 100px;
+    border: 20px solid rgba(0,0,0,5);
+}*/
+
+.pictures img{
+    margin: auto;
+    text-align: center;
+    width: 100%;      
+}
