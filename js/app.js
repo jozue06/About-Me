@@ -3,8 +3,8 @@
 var userPoints = 0;
 //////GLOBAL VARIABLE THAT WILL STAY OUT OF THE FUNCTIONS
 
-console.log('Josh\'s about me guessing game');
 
+console.log('Josh\'s about me guessing game');
 
 alert('Welcome to my guessing game!');
 
@@ -12,9 +12,9 @@ var user = prompt('What is your name?');
 alert('Hi ' + user + '! I am so glad you want to play my game. Let\'s see how much you can find out about me, ok?');
 console.log('User\'s name is ' + user);
 
-//game starts
 
-//(function game() { /* found the basic code for this function @ https://www.codecademy.com/en/forum_questions/54de5c2586f552b10a0029b9 */
+
+//game starts
 
 function questionOne() {
 var yesOrNo = 0;
@@ -43,30 +43,27 @@ questionOne();
 //////END OF QUESTION 1  DONE
 
 
-
-var yesOrNo2 = 0;
-var answer3;
-
-do {
-  answer3 = prompt('Do I like rain?' , 'type yes or no').toLowerCase();
-  if (answer3 === 'yes' || answer3 === 'no') {
-    yesOrNo2 = 1;
-  }
-} while (yesOrNo2 !== 1);
-
-if (answer3 === 'yes' && yesOrNo2 === 1) {
-  alert('what? no!');
-
-
-} if (answer3 === 'no' && yesOrNo2 === 1) {
-  alert('True, I do not like rain.');
-  userPoints++;
-}
-console.log(''+ user + ' has ' + userPoints + ' point(s).');
-console.log('' + user + '\'s answer to this question is '+ answer3);
-
 function questionTwo() {
-
+  var yesOrNo2 = 0;
+  var answer3;
+  
+  do {
+    answer3 = prompt('Do I like rain?' , 'type yes or no').toLowerCase();
+    if (answer3 === 'yes' || answer3 === 'no') {
+      yesOrNo2 = 1;
+    }
+  } while (yesOrNo2 !== 1);
+  
+  if (answer3 === 'yes' && yesOrNo2 === 1) {
+    alert('what? no!');
+  
+  
+  } if (answer3 === 'no' && yesOrNo2 === 1) {
+    alert('True, I do not like rain.');
+    userPoints++;
+  }
+  console.log(''+ user + ' has ' + userPoints + ' point(s).');
+  console.log('' + user + '\'s answer to this question is '+ answer3);
 }
 questionTwo();
 
@@ -74,33 +71,32 @@ questionTwo();
 
 
 
-var yesOrNo3 = 0;
-var answer4;
-
-do {
-  answer4 = prompt('Do I like living in Seattle?' , 'type yes or no').toLowerCase();
-  if (answer4 === 'yes' || answer4 === 'no') {
-    yesOrNo3 = 1;
-  }
-} while (yesOrNo3 !== 1);
-
-if (answer4 === 'yes' && yesOrNo3 === 1) {
-  alert('No unfortunately I do not like living in Seattle.');
-
-} if (answer4 === 'no' && yesOrNo3 === 1) {
-  alert('you\'re right, I don\'t like living in Seattle');
-  userPoints++;
-}
-console.log(''+ user + ' has ' + userPoints + ' point(s).');
-console.log('' + user + '\'s answer to this question is '+ answer4);
-
 function questionThree() {
-  
+  var yesOrNo3 = 0;
+  var answer4;
+
+  do {
+    answer4 = prompt('Do I like living in Seattle?' , 'type yes or no').toLowerCase();
+    if (answer4 === 'yes' || answer4 === 'no') {
+      yesOrNo3 = 1;
+    }
+  } while (yesOrNo3 !== 1);
+
+  if (answer4 === 'yes' && yesOrNo3 === 1) {
+    alert('No unfortunately I do not like living in Seattle.');
+
+  } if (answer4 === 'no' && yesOrNo3 === 1) {
+    alert('you\'re right, I don\'t like living in Seattle');
+    userPoints++;
+  }
+  console.log(''+ user + ' has ' + userPoints + ' point(s).');
+  console.log('' + user + '\'s answer to this question is '+ answer4);
 }
 questionThree();
 //////END OF QUESTION 3
 
 
+function questionFour() {
 var yesOrNo4 = 0;
 var answer5;
 
@@ -120,93 +116,86 @@ if (answer5 === 'yes' && yesOrNo4 === 1) {
 }
 
 console.log('' + user + '\'s answer to this question is '+ answer5);
-
-function questionFour() {
-  
 }
 questionFour();
 //////END OF QUESTION 4
 
-
+function questionFive() {
 var yesOrNo5 = 0;
 var answer6;
+  do {
+    answer6 = prompt('Was I born in Lithuania?' , 'type yes or no').toLowerCase();
+    if (answer6 === 'yes' || answer6 === 'no') {
+      yesOrNo5 = 1;
+    }
+  } while (yesOrNo5 !== 1);
 
-do {
-  answer6 = prompt('Was I born in Lithuania?' , 'type yes or no').toLowerCase();
-  if (answer6 === 'yes' || answer6 === 'no') {
-    yesOrNo5 = 1;
+  if (answer6 === 'yes' && yesOrNo5 === 1) {
+    alert('Nope, That\'s not true. I was born in Belgium.');
+
+  } if (answer6 === 'no' && yesOrNo5 === 1) {
+    alert('You\'re right ' + user + '. I was born in Belgium, not Lithuania');
+    userPoints++;
+    console.log(''+ user + ' has ' + userPoints + ' point(s).');
   }
-} while (yesOrNo5 !== 1);
-
-if (answer6 === 'yes' && yesOrNo5 === 1) {
-  alert('Nope, That\'s not true. I was born in Belgium.');
-
-} if (answer6 === 'no' && yesOrNo5 === 1) {
-  alert('You\'re right ' + user + '. I was born in Belgium, not Lithuania');
-  userPoints++;
-  console.log(''+ user + ' has ' + userPoints + ' point(s).');
-}
 console.log('' + user + '\'s answer to this question is '+ answer5);
-function questionFive() {
-  
 }
 questionFive();
 //////END OF QUESTION 5
 
-var numOfGuess = 0;
-var favNum = '6';
-while (numOfGuess < 3){
-  var guess = prompt('Guess my Favorite number!(you have 3 chances)');
 
-  console.log('Your guess ' + guess);
-  if (guess === favNum) {
-    alert('Awesome 6 is my favorite number!');
-    console.log('Awesome 6 is my favorite number!');
-    userPoints++;
-    break;
-  }
-  if (guess > favNum) {
-    alert('Too high');
-    console.log('' + guess + ' is too high');  
-  }
-  if (guess < favNum) {
-    alert('Too low');
-    console.log('' + guess + ' is too low');
-  }
-  numOfGuess++;
-
-}
 function questionSix() {
-  
+  var numOfGuess = 0;
+var favNum = '6';
+  while (numOfGuess < 3){
+    var guess = prompt('Guess my Favorite number!(you have 3 chances)');
+
+    console.log('Your guess ' + guess);
+    if (guess === favNum) {
+      alert('Awesome 6 is my favorite number!');
+      console.log('Awesome 6 is my favorite number!');
+      userPoints++;
+      break;
+    }
+    if (guess > favNum) {
+      alert('Too high');
+      console.log('' + guess + ' is too high');  
+    }
+    if (guess < favNum) {
+      alert('Too low');
+      console.log('' + guess + ' is too low');
+    }
+    numOfGuess++;
+  }
 }
 questionSix();
 
+
+function questionSeven() {
 var randNum = Math.floor(Math.random() * Math.floor(10));
 var numOfGuess2 = 0;
 console.log(randNum);
-while (numOfGuess2 < 3){
-  var guessRand = prompt('Guess a random number between 1-10!(you have 3 chances)');
 
-  console.log('Your guess ' + guessRand);
-  if (guessRand == randNum) {
-    alert('Awesome you guessed the number!');
-    console.log('you guessed the random number!');
-    userPoints++;
-    break;
-  }
-  if (guessRand > randNum) {
-    alert('Too high');
-    console.log('' + guess + ' is too high');  
-  }
-  if (guessRand < randNum) {
-    alert('Too low');
-    console.log('' + guess + ' is too low');
-  }
-  numOfGuess2++;
+  while (numOfGuess2 < 3){
+    var guessRand = prompt('Guess a random number between 1-10!(you have 3 chances)');
 
-}
-function questionSeven() {
-  
+    console.log('Your guess ' + guessRand);
+    if (guessRand == randNum) {
+      alert('Awesome you guessed the number!');
+      console.log('you guessed the random number!');
+      userPoints++;
+      break;
+    }
+    if (guessRand > randNum) {
+      alert('Too high');
+      console.log('' + guess + ' is too high');  
+    }
+    if (guessRand < randNum) {
+      alert('Too low');
+      console.log('' + guess + ' is too low');
+    }
+    numOfGuess2++;
+  }
 }
 questionSeven();
 /*
@@ -231,35 +220,37 @@ while (numOfGuess3 < 5){
 
 */
 
-var numOfGuess3 = 0;
 
-while (numOfGuess3 < 5){
-  var guessFood = prompt('Guess one of my favorite foods. (you have 5 chances.');
-  console.log('Your guess ' + guessFood);
-  var favFood = ['tacos','steak','pho','chilli'];
-  for (var i = 0; i < favFood.length; i++){
-    favFood[i];
-    if (guessFood === favFood[i]){
-      alert('Awesome you guessed one!');
-      console.log('Awesome ' + guessFood + ' is one of my favorites');
-      userPoints++;
-      numOfGuess3 = 5;
-      break;
-    }
-    else if (guessFood !== favFood[i]){
-      alert('Sorry, try again!');
-      numOfGuess3++;
+
+function questionEight() {
+  var numOfGuess3 = 0;
+
+  while (numOfGuess3 < 5){
+    var guessFood = prompt('Guess one of my favorite foods. (you have 5 chances.');
+    console.log('Your guess ' + guessFood);
+    var favFood = ['tacos','steak','pho','chilli'];
+    for (var i = 0; i < favFood.length; i++){
+      favFood[i];
+      if (guessFood === favFood[i]){
+        alert('Awesome you guessed one!');
+        console.log('Awesome ' + guessFood + ' is one of my favorites');
+        userPoints++;
+        numOfGuess3 = 5;
+        break;
+      }
+      else if (guessFood !== favFood[i]){
+        alert('Sorry, try again!');
+        numOfGuess3++;
+      }
     }
   }
 }
+questionEight();
 
 console.log(''+ user + ' has ' + userPoints + ' point(s).');
-//})();
-
-alert('That\'s it! lets see how you did: ' + user + ', You\'ve earned ' + userPoints + ' point(s) out of 7 total points.');
 
 
-
+alert('That\'s it! lets see how you did: ' + user + ', You\'ve earned ' + userPoints + ' point(s) out of 8 total points.');
 
 
 
