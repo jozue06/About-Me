@@ -1,8 +1,10 @@
 'use strict';
 
 var userPoints = 0;
+//////GLOBAL VARIABLE THAT WILL STAY OUT OF THE FUNCTIONS
 
 console.log('Josh\'s about me guessing game');
+
 
 alert('Welcome to my guessing game!');
 
@@ -14,6 +16,7 @@ console.log('User\'s name is ' + user);
 
 //(function game() { /* found the basic code for this function @ https://www.codecademy.com/en/forum_questions/54de5c2586f552b10a0029b9 */
 
+function questionOne() {
 var yesOrNo = 0;
 var answer2;
 //asks the first question.
@@ -33,6 +36,13 @@ if (answer2 === 'yes' && yesOrNo === 1) {
 }//if answer is incorrect, displays message and moves on without point
 
 console.log('' + user + '\'s answer to this question is '+ answer2); //logs the answer input to the question
+
+}
+questionOne();
+
+//////END OF QUESTION 1  DONE
+
+
 
 var yesOrNo2 = 0;
 var answer3;
@@ -55,6 +65,15 @@ if (answer3 === 'yes' && yesOrNo2 === 1) {
 console.log(''+ user + ' has ' + userPoints + ' point(s).');
 console.log('' + user + '\'s answer to this question is '+ answer3);
 
+function questionTwo() {
+
+}
+questionTwo();
+
+//////END OF QUESTION 2
+
+
+
 var yesOrNo3 = 0;
 var answer4;
 
@@ -74,6 +93,13 @@ if (answer4 === 'yes' && yesOrNo3 === 1) {
 }
 console.log(''+ user + ' has ' + userPoints + ' point(s).');
 console.log('' + user + '\'s answer to this question is '+ answer4);
+
+function questionThree() {
+  
+}
+questionThree();
+//////END OF QUESTION 3
+
 
 var yesOrNo4 = 0;
 var answer5;
@@ -95,6 +121,13 @@ if (answer5 === 'yes' && yesOrNo4 === 1) {
 
 console.log('' + user + '\'s answer to this question is '+ answer5);
 
+function questionFour() {
+  
+}
+questionFour();
+//////END OF QUESTION 4
+
+
 var yesOrNo5 = 0;
 var answer6;
 
@@ -114,6 +147,11 @@ if (answer6 === 'yes' && yesOrNo5 === 1) {
   console.log(''+ user + ' has ' + userPoints + ' point(s).');
 }
 console.log('' + user + '\'s answer to this question is '+ answer5);
+function questionFive() {
+  
+}
+questionFive();
+//////END OF QUESTION 5
 
 var numOfGuess = 0;
 var favNum = '6';
@@ -138,6 +176,10 @@ while (numOfGuess < 3){
   numOfGuess++;
 
 }
+function questionSix() {
+  
+}
+questionSix();
 
 var randNum = Math.floor(Math.random() * Math.floor(10));
 var numOfGuess2 = 0;
@@ -163,6 +205,10 @@ while (numOfGuess2 < 3){
   numOfGuess2++;
 
 }
+function questionSeven() {
+  
+}
+questionSeven();
 /*
 var numOfGuess3 = 0;
 
