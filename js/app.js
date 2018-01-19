@@ -17,25 +17,25 @@ console.log('User\'s name is ' + user);
 //game starts
 
 function questionOne() {
-var yesOrNo = 0;
-var answer2;
-//asks the first question.
-do {
-  answer2 = prompt('Do I like spaghetti?' , 'type yes or no').toLowerCase();
-  if (answer2 === 'yes' || answer2 === 'no') {
-    yesOrNo = 1;
-  }
-} while (yesOrNo !== 1); //restricts answers to only yes or no.
+  var yesOrNo = 0;
+  var answer2;
+  //asks the first question.
+  do {
+    answer2 = prompt('Do I like spaghetti?' , 'type yes or no').toLowerCase();
+    if (answer2 === 'yes' || answer2 === 'no') {
+      yesOrNo = 1;
+    }
+  } while (yesOrNo !== 1); //restricts answers to only yes or no.
 
-if (answer2 === 'yes' && yesOrNo === 1) {
-  alert('Yep, I really like spaghetti!');
-  userPoints++; //if answer is correct, displays message and gives point
-  console.log(''+ user + ' has ' + userPoints + ' point(s).'); //logs user points to debug in console if needed
-} if (answer2 === 'no' && yesOrNo === 1) {
-  alert('Not true, I do like spaghetti. Keep going.');
-}//if answer is incorrect, displays message and moves on without point
+  if (answer2 === 'yes' && yesOrNo === 1) {
+    alert('Yep, I really like spaghetti!');
+    userPoints++; //if answer is correct, displays message and gives point
+    console.log(''+ user + ' has ' + userPoints + ' point(s).'); //logs user points to debug in console if needed
+  } if (answer2 === 'no' && yesOrNo === 1) {
+    alert('Not true, I do like spaghetti. Keep going.');
+  }//if answer is incorrect, displays message and moves on without point
 
-console.log('' + user + '\'s answer to this question is '+ answer2); //logs the answer input to the question
+  console.log('' + user + '\'s answer to this question is '+ answer2); //logs the answer input to the question
 
 }
 questionOne();
@@ -97,32 +97,32 @@ questionThree();
 
 
 function questionFour() {
-var yesOrNo4 = 0;
-var answer5;
+  var yesOrNo4 = 0;
+  var answer5;
 
-do {
-  answer5 = prompt('Are Siberian Tigers my favorite animal?' , 'type yes or no').toLowerCase();
-  if (answer5 === 'yes' || answer5 === 'no') {
-    yesOrNo4 = 1;
+  do {
+    answer5 = prompt('Are Siberian Tigers my favorite animal?' , 'type yes or no').toLowerCase();
+    if (answer5 === 'yes' || answer5 === 'no') {
+      yesOrNo4 = 1;
+    }
+  } while (yesOrNo4 !== 1);
+
+  if (answer5 === 'yes' && yesOrNo4 === 1) {
+    alert('YES! Yes they are!');
+    userPoints++;
+    console.log(''+ user + ' has ' + userPoints + ' point(s).');
+  } if (answer5 === 'no' && yesOrNo4 === 1) {
+    alert('Sorry, but that\'s wrong. I _really_ like Siberian Tigers!');
   }
-} while (yesOrNo4 !== 1);
 
-if (answer5 === 'yes' && yesOrNo4 === 1) {
-  alert('YES! Yes they are!');
-  userPoints++;
-  console.log(''+ user + ' has ' + userPoints + ' point(s).');
-} if (answer5 === 'no' && yesOrNo4 === 1) {
-  alert('Sorry, but that\'s wrong. I _really_ like Siberian Tigers!');
-}
-
-console.log('' + user + '\'s answer to this question is '+ answer5);
+  console.log('' + user + '\'s answer to this question is '+ answer5);
 }
 questionFour();
 //////END OF QUESTION 4
 
 function questionFive() {
-var yesOrNo5 = 0;
-var answer6;
+  var yesOrNo5 = 0;
+  var answer6;
   do {
     answer6 = prompt('Was I born in Lithuania?' , 'type yes or no').toLowerCase();
     if (answer6 === 'yes' || answer6 === 'no') {
@@ -138,7 +138,7 @@ var answer6;
     userPoints++;
     console.log(''+ user + ' has ' + userPoints + ' point(s).');
   }
-console.log('' + user + '\'s answer to this question is '+ answer6);
+  console.log('' + user + '\'s answer to this question is '+ answer6);
 }
 questionFive();
 //////END OF QUESTION 5
@@ -146,7 +146,7 @@ questionFive();
 
 function questionSix() {
   var numOfGuess = 0;
-var favNum = '6';
+  var favNum = '6';
   while (numOfGuess < 3){
     var guess = prompt('Guess my Favorite number!(you have 3 chances)');
 
@@ -172,9 +172,9 @@ questionSix();
 
 
 function questionSeven() {
-var randNum = Math.floor(Math.random() * Math.floor(10));
-var numOfGuess2 = 0;
-console.log(randNum);
+  var randNum = Math.floor(Math.random() * Math.floor(10));
+  var numOfGuess2 = 0;
+  console.log(randNum);
 
   while (numOfGuess2 < 3){
     var guessRand = prompt('Guess a random number between 0-10!(you have 3 chances)');
