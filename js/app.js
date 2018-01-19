@@ -138,7 +138,7 @@ var answer6;
     userPoints++;
     console.log(''+ user + ' has ' + userPoints + ' point(s).');
   }
-console.log('' + user + '\'s answer to this question is '+ answer5);
+console.log('' + user + '\'s answer to this question is '+ answer6);
 }
 questionFive();
 //////END OF QUESTION 5
@@ -177,7 +177,7 @@ var numOfGuess2 = 0;
 console.log(randNum);
 
   while (numOfGuess2 < 3){
-    var guessRand = prompt('Guess a random number between 1-10!(you have 3 chances)');
+    var guessRand = prompt('Guess a random number between 0-10!(you have 3 chances)');
 
     console.log('Your guess ' + guessRand);
     if (guessRand == randNum) {
@@ -188,11 +188,11 @@ console.log(randNum);
     }
     if (guessRand > randNum) {
       alert('Too high');
-      console.log('' + guess + ' is too high');  
+      console.log('' + guessRand + ' is too high');  
     }
     if (guessRand < randNum) {
       alert('Too low');
-      console.log('' + guess + ' is too low');
+      console.log('' + guessRand + ' is too low');
     }
     numOfGuess2++;
   }
