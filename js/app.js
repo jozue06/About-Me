@@ -16,7 +16,7 @@ console.log('User\'s name is ' + user);
 
 //game starts
 
-
+// Array coding by Maxwell Ridiker
 var gameArray = [['Do I like spaghetti?','Do I like rain?','Are Siberian Tigers my favorite animal?','Was I born in Lithuania?','Do I like living in Seattle?'], ['yes', 'no', 'yes', 'no', 'no']];
 
 var correctAnswer = ['Yep, I really like spaghetti!', 'True, I do not like rain.','YES! Yes they are!', 'You\'re right ' + user + '. I was born in Belgium, not Lithuania', 'you\'re right, I don\'t like living in Seattle',];
@@ -33,7 +33,6 @@ function questionOne() {
     do {
       var userAnswer = prompt(gameArray[0][i]).toLowerCase();
       userAnswerArray.push(userAnswer);
-      //do i need to change userAnswer to userAnswerArray[i]
       console.log(userAnswer);
       if (userAnswer === 'yes' || userAnswer === 'no') {
         yesOrNo = 1;
