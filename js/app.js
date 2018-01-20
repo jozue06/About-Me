@@ -106,25 +106,21 @@ function questionSeven() {
 }
 questionSeven();
 
+
 function questionEight() {
   var numOfGuess3 = 0;
 
   while (numOfGuess3 < 5){
     var guessFood = prompt('Guess one of my favorite foods. (you have 5 chances.');
     console.log('Your guess ' + guessFood);
-    var favFood = ['tacos','steak','pho','chilli'];
+    var favFood = ['tacos','steak','spaghetti','chilli', 'pho'];
     for (var i = 0; i < favFood.length; i++){
-      favFood[i];
       if (guessFood === favFood[i]){
         alert('Awesome you guessed one!');
         console.log('Awesome ' + guessFood + ' is one of my favorites');
         userPoints++;
         numOfGuess3 = 5;
         break;
-      }
-      else if (guessFood !== favFood[i]){
-        alert('Sorry, try again!');
-        numOfGuess3++;
       }
     }
   }
