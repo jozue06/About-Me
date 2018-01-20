@@ -16,133 +16,42 @@ console.log('User\'s name is ' + user);
 
 //game starts
 
+
+var gameArray = [['Do I like spaghetti?','Do I like rain?','Are Siberian Tigers my favorite animal?','Was I born in Lithuania?','Do I like living in Seattle?'], ['yes', 'no', 'yes', 'no', 'no']];
+
+var correctAnswer = ['Yep, I really like spaghetti!', 'True, I do not like rain.','YES! Yes they are!', 'You\'re right ' + user + '. I was born in Belgium, not Lithuania', 'you\'re right, I don\'t like living in Seattle',];
+
+var wrongAnswer = ['Not true, I do like spaghetti. Keep going.', 'What?! No!', 'Sorry, but that\'s wrong. I really like Siberian Tigers!', 'Nope, That\'s not true. I was born in Belgium.', 'No unfortunately I do not like living in Seattle.'];
+
+var userAnswerArray = [];
+
 function questionOne() {
-  var yesOrNo = 0;
-  var answer2;
+
   //asks the first question.
-  do {
-    answer2 = prompt('Do I like spaghetti?' , 'type yes or no').toLowerCase();
-    if (answer2 === 'yes' || answer2 === 'no') {
-      yesOrNo = 1;
-    }
-  } while (yesOrNo !== 1); //restricts answers to only yes or no.
+  for (var i = 0; i < 5; i++) {
+    var yesOrNo = 0;
+    do {
+      var userAnswer = prompt(gameArray[0][i]).toLowerCase();
+      userAnswerArray.push(userAnswer);
+      //do i need to change userAnswer to userAnswerArray[i]
+      console.log(userAnswer);
+      if (userAnswer === 'yes' || userAnswer === 'no') {
+        yesOrNo = 1;
+      }
+    } while (yesOrNo !== 1);
 
-  if (answer2 === 'yes' && yesOrNo === 1) {
-    alert('Yep, I really like spaghetti!');
-    userPoints++; //if answer is correct, displays message and gives point
-    console.log(''+ user + ' has ' + userPoints + ' point(s).'); //logs user points to debug in console if needed
-  } if (answer2 === 'no' && yesOrNo === 1) {
-    alert('Not true, I do like spaghetti. Keep going.');
-  }//if answer is incorrect, displays message and moves on without point
-
-  console.log('' + user + '\'s answer to this question is '+ answer2); //logs the answer input to the question
-
+    if (userAnswer === (gameArray[1][i])) {
+      alert(correctAnswer[i]);
+      userPoints++; //if answer is correct, displays message and gives point
+      console.log(''+ user + ' has ' + userPoints + ' point(s).'); //logs user points to debug in console if needed
+    } else {
+      alert(wrongAnswer[i]);
+    }//if answer is incorrect, displays message and moves on without point
+    console.log('' + user + '\'s answer to this question is '+ userAnswer); //logs the answer input to the question
+  }
 }
 questionOne();
-
-//////END OF QUESTION 1  DONE
-
-
-function questionTwo() {
-  var yesOrNo2 = 0;
-  var answer3;
-  
-  do {
-    answer3 = prompt('Do I like rain?' , 'type yes or no').toLowerCase();
-    if (answer3 === 'yes' || answer3 === 'no') {
-      yesOrNo2 = 1;
-    }
-  } while (yesOrNo2 !== 1);
-  
-  if (answer3 === 'yes' && yesOrNo2 === 1) {
-    alert('what? no!');
-  
-  
-  } if (answer3 === 'no' && yesOrNo2 === 1) {
-    alert('True, I do not like rain.');
-    userPoints++;
-  }
-  console.log(''+ user + ' has ' + userPoints + ' point(s).');
-  console.log('' + user + '\'s answer to this question is '+ answer3);
-}
-questionTwo();
-
-//////END OF QUESTION 2
-
-
-
-function questionThree() {
-  var yesOrNo3 = 0;
-  var answer4;
-
-  do {
-    answer4 = prompt('Do I like living in Seattle?' , 'type yes or no').toLowerCase();
-    if (answer4 === 'yes' || answer4 === 'no') {
-      yesOrNo3 = 1;
-    }
-  } while (yesOrNo3 !== 1);
-
-  if (answer4 === 'yes' && yesOrNo3 === 1) {
-    alert('No unfortunately I do not like living in Seattle.');
-
-  } if (answer4 === 'no' && yesOrNo3 === 1) {
-    alert('you\'re right, I don\'t like living in Seattle');
-    userPoints++;
-  }
-  console.log(''+ user + ' has ' + userPoints + ' point(s).');
-  console.log('' + user + '\'s answer to this question is '+ answer4);
-}
-questionThree();
-//////END OF QUESTION 3
-
-
-function questionFour() {
-  var yesOrNo4 = 0;
-  var answer5;
-
-  do {
-    answer5 = prompt('Are Siberian Tigers my favorite animal?' , 'type yes or no').toLowerCase();
-    if (answer5 === 'yes' || answer5 === 'no') {
-      yesOrNo4 = 1;
-    }
-  } while (yesOrNo4 !== 1);
-
-  if (answer5 === 'yes' && yesOrNo4 === 1) {
-    alert('YES! Yes they are!');
-    userPoints++;
-    console.log(''+ user + ' has ' + userPoints + ' point(s).');
-  } if (answer5 === 'no' && yesOrNo4 === 1) {
-    alert('Sorry, but that\'s wrong. I _really_ like Siberian Tigers!');
-  }
-
-  console.log('' + user + '\'s answer to this question is '+ answer5);
-}
-questionFour();
-//////END OF QUESTION 4
-
-function questionFive() {
-  var yesOrNo5 = 0;
-  var answer6;
-  do {
-    answer6 = prompt('Was I born in Lithuania?' , 'type yes or no').toLowerCase();
-    if (answer6 === 'yes' || answer6 === 'no') {
-      yesOrNo5 = 1;
-    }
-  } while (yesOrNo5 !== 1);
-
-  if (answer6 === 'yes' && yesOrNo5 === 1) {
-    alert('Nope, That\'s not true. I was born in Belgium.');
-
-  } if (answer6 === 'no' && yesOrNo5 === 1) {
-    alert('You\'re right ' + user + '. I was born in Belgium, not Lithuania');
-    userPoints++;
-    console.log(''+ user + ' has ' + userPoints + ' point(s).');
-  }
-  console.log('' + user + '\'s answer to this question is '+ answer6);
-}
-questionFive();
-//////END OF QUESTION 5
-
+console.log('end of multidimensional array questions');
 
 function questionSix() {
   var numOfGuess = 0;
@@ -169,7 +78,6 @@ function questionSix() {
   }
 }
 questionSix();
-
 
 function questionSeven() {
   var randNum = Math.floor(Math.random() * Math.floor(10));
@@ -198,29 +106,6 @@ function questionSeven() {
   }
 }
 questionSeven();
-/*
-var numOfGuess3 = 0;
-
-while (numOfGuess3 < 5){
-  var guessFood = prompt('Guess one of my favorite foods. (you have 5 chances.');
-  console.log('Your guess ' + guessFood);
-  var favFood = ['tacos','steak','pho','chilli'];
-  if (guessFood === favFood[0] || guessFood === favFood[1] || guessFood === favFood[2] || guessFood === favFood[3]){
-    alert('Awesome you guessed one!');
-    console.log('Awesome ' + guessFood + ' is one of my favorites');
-    userPoints++;
-    break;
-  }
-  else if (guessFood !== favFood){
-    alert('Sorry, try again!');
-    numOfGuess3++;
-  }
-
-}
-
-*/
-
-
 
 function questionEight() {
   var numOfGuess3 = 0;
