@@ -19,7 +19,7 @@ console.log('User\'s name is ' + user);
 // Array coding by Maxwell Ridiker
 var gameArray = [['Do I like spaghetti?','Do I like rain?','Are Siberian Tigers my favorite animal?','Was I born in Lithuania?','Do I like living in Seattle?'], ['yes', 'no', 'yes', 'no', 'no']];
 
-var correctAnswer = ['Yep, I really like spaghetti!', 'True, I do not like rain.','YES! Yes they are!', 'You\'re right ' + user + '. I was born in Belgium, not Lithuania', 'you\'re right, I don\'t like living in Seattle',];
+var correctAnswer = ['Yep, I really like spaghetti!', 'True, I do not like rain.','YES! Yes they are!', 'You\'re right ' + user + '. I was born in Belgium, not Lithuania', 'You\'re right, I don\'t like living in Seattle',];
 
 var wrongAnswer = ['Not true, I do like spaghetti. Keep going.', 'What?! No!', 'Sorry, but that\'s wrong. I really like Siberian Tigers!', 'Nope, That\'s not true. I was born in Belgium.', 'No unfortunately I do not like living in Seattle.'];
 
@@ -56,7 +56,7 @@ function questionSix() {
   var numOfGuess = 0;
   var favNum = '6';
   while (numOfGuess < 3){
-    var guess = prompt('Guess my Favorite number!(you have 3 chances)');
+    var guess = prompt('Guess my Favorite number! (You have 3 chances)');
 
     console.log('Your guess ' + guess);
     if (guess === favNum) {
@@ -84,10 +84,10 @@ function questionSeven() {
   console.log(randNum);
 
   while (numOfGuess2 < 3){
-    var guessRand = prompt('Guess a random number between 0-10!(you have 3 chances)');
+    var guessRand = prompt('Guess a random number between 0-10! (You have 3 chances)');
 
     console.log('Your guess ' + guessRand);
-    if (guessRand == randNum) {
+    if (guessRand === randNum) {
       alert('Awesome you guessed the number!');
       console.log('you guessed the random number!');
       userPoints++;
@@ -111,7 +111,7 @@ function questionEight() {
   var numOfGuess3 = 0;
 
   while (numOfGuess3 < 5){
-    var guessFood = prompt('Guess one of my favorite foods. (you have 5 chances.');
+    var guessFood = prompt('Guess one of my favorite foods. (You have 5 chances)');
     console.log('Your guess ' + guessFood);
     var favFood = ['tacos','steak','spaghetti','chilli', 'pho'];
     for (var i = 0; i < favFood.length; i++){
@@ -130,7 +130,7 @@ questionEight();
 console.log(''+ user + ' has ' + userPoints + ' point(s).');
 
 
-alert('That\'s it! lets see how you did: ' + user + ', You\'ve earned ' + userPoints + ' point(s) out of 8 total points.');
+alert('That\'s it! Lets see how you did: ' + user + ', You\'ve earned ' + userPoints + ' point(s) out of 8 total points.');
 
 
 
