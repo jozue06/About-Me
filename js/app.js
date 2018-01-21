@@ -87,7 +87,7 @@ function questionSeven() {
 
   while (numOfGuess2 < 5){
     var guessRand = prompt('Guess a random number between 0-10! (You have 5 chances)');
-
+    guessRand.parseInt;
     //console.log('Your guess ' + guessRand);
     if (guessRand == randNum) {
       alert('Awesome you guessed the number!');
@@ -99,7 +99,7 @@ function questionSeven() {
       alert('Too high');
       //console.log('' + guessRand + ' is too high');
     }
-    if (guessRand < randNum) {
+    else if (guessRand < randNum) {
       alert('Too low');
       //console.log('' + guessRand + ' is too low');
     }
@@ -107,9 +107,6 @@ function questionSeven() {
   }
 }
 questionSeven();
-
-
-
 
 function questionEight() {
   var numOfGuess3 = 0;
